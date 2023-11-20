@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    url: jdbc:mysql://localhost:19901/developers
+    username: spring_user
+    password: cvHZL6753xY@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  flyway:
+    user: spring_user
+    password: cvHZL6753xY@
+    url: jdbc:mysql://localhost:19901/developers
+    baseline-on-migrate: true

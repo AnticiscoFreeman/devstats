@@ -1,0 +1,13 @@
+server:
+  port: 12201
+
+spring:
+  profiles:
+    active: production
+
+  jackson:
+    serialization:
+      write-empty-json-arrays: true
+
+  freemarker:
+    expose-request-attributes: true
